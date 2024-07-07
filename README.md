@@ -1,7 +1,7 @@
 # RISC-V-Disassemble
 INPUT: 
-yasaswini@yasaswini-HP-Laptop-15s-fr5xxx:~$ gcc assembly.c
-yasaswini@yasaswini-HP-Laptop-15s-fr5xxx:~$ ./a.out
+gcc assembly.c
+./a.out
 
 OUTPUT:
 add x3, x4, x7 
