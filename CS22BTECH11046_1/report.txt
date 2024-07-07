@@ -1,0 +1,26 @@
+IN MAIN:
+1. File is read line by line in a text file using "fgets" and counted how many line in txt file.
+2. Then Each line is stored in "hexarr[count]" as string of size 9 because last is null terminator
+3. then every line is called in "hextobin" function and returns string of size 33 to a char variable "binary"
+4. Take last 7 characters of "binary" using "strncpy" and store it in opcode variable
+5. This is used for knowing it is of which type "I","R","B","S","J" or "U".
+6. The "binary" variable is used as argument to funtions of "I","R","B","S","J" and "U".And the opcode decides to which function the "binary" variable should go as argument.
+7. And print the instructions respectively to which the "binary goes".
+
+hextobin : coverts hex to binary and returns it as string
+decimal(input,n): converts binary to decimal and returns decimal value(Takes input and its size as arguments)
+
+RType: Firstly define variables as:
+					char f7[8];
+					char rs2[6];
+					char rs1[6];
+					char f3[4];
+					char rd[6];
+
+1. extract respective binary string using "strncpy"
+2. First compare f7 and after again compare with f3
+3. decimal function will convert rs2[6] and rs1[6] and rd[6] to their respective decimal values
+4. And print respective instructions.
+
+Remaining Functions slight changed mad in R function.
+I used strcat for adding two function and strcpy to copy the string in a respective variable.
